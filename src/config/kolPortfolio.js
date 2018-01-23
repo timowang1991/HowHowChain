@@ -6,25 +6,25 @@ module.exports = {
     kols: [
         {
             name: 'HowFun',
-            image: 'https://yt3.ggpht.com/a-/AK162_4uyK8T6ToVUBK3DPltfnEribooJZ4ecv3CJA=s900-mo-c-c0xffffffff-rj-k-no',
+            image: 'https://imgur.com/a/tkBhi',
             currencyName: 'HFC',
             currencyToETH: 2.34
         },
         {
             name: '上班不要看NSFW',
-            image: 'http://i.imgur.com/egzBf9o.png',
+            image: 'https://imgur.com/a/rbaMW',
             currencyName: 'HFC',
             currencyToETH: 2.34
         },
         {
             name: '囧星人',
-            image: 'https://yt3.ggpht.com/a-/AK162_79lxy_rOpYox_JG0jkrscVjQxaCJAkw_i1Xw=s900-mo-c-c0xffffffff-rj-k-no',
+            image: 'https://imgur.com/a/P8GQk',
             currencyName: 'HFC',
             currencyToETH: 2.34
         },
         {
-            name: '超立方',
-            image: '',
+            name: '黃阿瑪的後宮生活',
+            image: 'https://imgur.com/a/wiI64',
             currencyName: 'HFC',
             currencyToETH: 2.34
         }
