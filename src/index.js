@@ -14,6 +14,7 @@ import SignUp from './user/layouts/signup/SignUp'
 import Profile from './user/layouts/profile/Profile'
 import KolMenu from './layouts/kol/KolMenu'
 import KolList from './layouts/kol/KolList';
+import KolPortfolio from './layouts/kol/KolPortfolio';
 
 // Redux Store
 import store from './store'
@@ -40,6 +41,7 @@ ReactDOM.render((
           <Route path="profile" component={UserIsAuthenticated(Profile)} />
         </Route>
         <Route path="/kol" component={KolMenu}>
+          <Route path="portfolio" component={KolPortfolio} />
           <Route path="kollisting" component={KolList} />
         </Route>
       </Router>
