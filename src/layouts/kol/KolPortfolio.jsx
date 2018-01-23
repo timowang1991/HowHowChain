@@ -18,4 +18,4 @@ class KolPortfolio extends Component {
     }
 }
 
-export default KolPortfolio;
+export default KolPortfolio; 
