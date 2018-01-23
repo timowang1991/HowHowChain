@@ -7,12 +7,17 @@ class KolPortfolio extends Component {
 	constructor(props) {
         super(props);
         this.generateChartData = this.generateChartData.bind(this);
+        this.handleButtonClick = this.handleButtonClick.bind(this);
         this.state = {
 	      chartData: this.generateChartData(),
 	      timer: null
 	    };
     }
 	
+	handleButtonClick() {
+		console.log('-----');
+	}
+
 	generateChartData() {
 	  let firstDate = new Date();
 	  let output = [];
@@ -104,8 +109,16 @@ class KolPortfolio extends Component {
 		                </div>
 		                <div className="Lh(43px) D(f) Jc(c) Fld(c)">
 		                    <div className="Fz(36px) Fw(500) C(#26282a)">
-		                        <button className="W(198px) H(52px) Bdrs(17px) Bgi(buttomRed) Mb(16px) C(#fff) Fw(500) Fz(18px)">買入</button>
-		                        <button className="W(198px) H(52px) Bdrs(17px) Bgc(#fff) Bd(buttomBorder) C(#e94e61) Fw(500) Fz(18px)">賣出</button>
+		                        <button 
+		                        	className="W(198px) H(52px) Bdrs(17px) Bgi(buttomRed) Mb(16px) C(#fff) Fw(500) Fz(18px)"
+		                        	onClick={this.handleButtonClick}>
+		                        	買入
+		                        </button>
+		                        <button 
+		                        	className="W(198px) H(52px) Bdrs(17px) Bgc(#fff) Bd(buttomBorder) C(#e94e61) Fw(500) Fz(18px)"
+		                        	onClick={this.handleButtonClick}>
+		                        	賣出
+		                        </button>
 		                    </div>
 		                </div>
 		           	</li>

@@ -234,9 +234,6 @@
 .TranslateY\(-50\%\) {
   transform: translateY(-50%);
 }
-.W\(10\%\) {
-  width: 10%;
-}
 .W\(100\%\) {
   width: 100%;
 }
