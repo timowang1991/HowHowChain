@@ -8,7 +8,7 @@ class KolPortfolio extends Component {
 
         var data = {
             name: 'HowFun',
-            image: 'https://imgur.com/a/tkBhi',
+            image: 'https://s3-us-west-1.amazonaws.com/acttools/howhowcoin/20180123/howhow.jpg?q=57786',
             kolCurrencyValue: 100,
             kolCurrencyName: 'HFC',
             kolCurrencyToETH: 2.34
@@ -40,8 +40,6 @@ class KolPortfolio extends Component {
                         </div>
                         <div className="Cl(b)" />
                     </div>
-
-                <KolPortfolioListItem key={`KolPortfolioListItem-${100}`} {...data} />
 
                 {kolPortfolio.kols.map((item, idx) =>
                     <KolPortfolioListItem key={`KolPortfolioListItem-${idx}`} {...item} />
