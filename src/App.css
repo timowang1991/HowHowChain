@@ -82,3 +82,31 @@ table th {
     border-bottom: #eee solid 1px;
     vertical-align: middle;
 }
+
+.W\(15\%\) {
+    width: 15%;
+}
+
+.W\(20\%\) {
+    width: 20%;
+}
+
+.W\(30\%\) {
+    width: 30%;
+}
+
+.W\(40\%\) {
+    width: 40%;
+}
+
+.W\(50\%\) {
+    width: 50%;
+}
+
+.W\(80\%\) {
+    width: 80%;
+}
+
+.W\(95\%\) {
+    width: 95%;
+}
