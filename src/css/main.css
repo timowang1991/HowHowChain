@@ -17,18 +17,29 @@
 .Bdstart\(greySolid\) {
   border-left: 1px solid #eee;
 }
+<<<<<<< HEAD
 .Bdrs\(17px\) {
   border-radius: 17px;
 >>>>>>> add basic chart for profolio
+=======
+.Bdbc\(\#d8d8d8\) {
+  border-bottom-color: #d8d8d8;
+}
+.Bdbs\(s\) {
+  border-bottom-style: solid;
+}
+.Bdbw\(1px\) {
+  border-bottom-width: 1px;
+>>>>>>> update
+}
+.Bdrs\(17px\) {
+  border-radius: 17px;
 }
 .Bdrs\(50\%\) {
   border-radius: 50%;
 }
 .Bg\(\#e94e61\) {
   background: #e94e61;
-}
-.Bg\(\#f66\) {
-  background: #f66;
 }
 .Bgi\(buttomRed\) {
   background-image: linear-gradient(253deg, #f5515f, #9f041b);
@@ -62,9 +73,6 @@
 }
 .C\(\#e94e61\) {
   color: #e94e61;
-}
-.C\(\#f66\) {
-  color: #f66;
 }
 .C\(\#fff\) {
   color: #fff;
@@ -165,9 +173,6 @@
 .Mt\(8px\) {
   margin-top: 8px;
 }
-.Mend\(16px\) {
-  margin-right: 16px;
-}
 .Mend\(24px\) {
   margin-right: 24px;
 }
@@ -186,12 +191,18 @@
   margin-left: 4px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> update
 .Mstart\(80px\) {
   margin-left: 80px;
 =======
 .Mstart\(a\) {
   margin-left: auto;
 >>>>>>> add basic chart for profolio
+}
+.Mstart\(a\) {
+  margin-left: auto;
 }
 .T\(50\%\) {
   top: 50%;
@@ -262,8 +273,14 @@
   width: 623px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> update
 .W\(72px\) {
   width: 72px;
+}
+.W\(80\%\) {
+  width: 80%;
 }
 .W\(800px\) {
   width: 800px;
