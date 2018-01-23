@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import PaymentButtonContainer from '../../user/ui/paymentbutton/PaymentButtonContainer'
+import PaymentButtonContainer from '../../user/ui/paymentbutton/PaymentButtonContainer';
 
 class Payment extends Component {
     render() {

@@ -5,13 +5,6 @@ module.exports = {
     walletCurrency: 'ETH',
     kols: [
         {
-            name: 'HowFun',
-            image: 'https://s3-us-west-1.amazonaws.com/acttools/howhowcoin/20180123/howhow.jpg?q=57786',
-            kolCurrencyValue: 100,
-            kolCurrencyName: 'HFC',
-            kolCurrencyToETH: 2.34
-        },
-        {
             name: '上班不要看NSFW',
             image: 'https://s3-us-west-1.amazonaws.com/acttools/howhowcoin/20180123/notwatch.jpg?q=57785',
             kolCurrencyValue: Math.floor(Math.random() * 1000),
