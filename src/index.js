@@ -12,6 +12,8 @@ import Home from './layouts/home/Home'
 import Dashboard from './layouts/dashboard/Dashboard'
 import SignUp from './user/layouts/signup/SignUp'
 import Profile from './user/layouts/profile/Profile'
+import KolMenu from './layouts/kol/KolMenu'
+import KolList from './layouts/kol/KolList';
 
 // Redux Store
 import store from './store'
@@ -36,6 +38,9 @@ ReactDOM.render((
           <Route path="dashboard" component={UserIsAuthenticated(Dashboard)} />
           <Route path="signup" component={UserIsNotAuthenticated(SignUp)} />
           <Route path="profile" component={UserIsAuthenticated(Profile)} />
+        </Route>
+        <Route path="/kol" component={KolMenu}>
+          <Route path="kollisting" component={KolList} />
         </Route>
       </Router>
     </Provider>
