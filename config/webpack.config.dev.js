@@ -6,8 +6,7 @@ var InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
 var WatchMissingNodeModulesPlugin = require('react-dev-utils/WatchMissingNodeModulesPlugin');
 var getClientEnvironment = require('./env');
 var paths = require('./paths');
-
-
+var path = require('path');
 
 // Webpack uses `publicPath` to determine where the app is being served from.
 // In development, we always serve from the root. This makes config easier.
@@ -91,6 +90,14 @@ module.exports = {
       }
     ],
     loaders: [
+      {
+        test: /\.(js|jsx)?$/,
+        exclude: /(node_modules)/,
+        loader: 'webpack-atomizer-loader',
+        query: {
+          configPath: path.resolve('./config/atomCssConfig.js')
+        }
+      },
       // Default loader: load all assets that are not handled
       // by other loaders with the url loader.
       // Note: This list needs to be updated with every change of extensions
