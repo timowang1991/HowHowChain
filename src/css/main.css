@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .Bdbc\(\#d8d8d8\) {
   border-bottom-color: #d8d8d8;
 }
@@ -6,9 +7,31 @@
 }
 .Bdbw\(1px\) {
   border-bottom-width: 1px;
+=======
+.Bd\(buttomBorder\) {
+  border: solid 3px #e94e61;
+}
+.Bdt\(greySolid\) {
+  border-top: 1px solid #eee;
+}
+.Bdstart\(greySolid\) {
+  border-left: 1px solid #eee;
+}
+.Bdrs\(17px\) {
+  border-radius: 17px;
+>>>>>>> add basic chart for profolio
 }
 .Bdrs\(50\%\) {
   border-radius: 50%;
+}
+.Bg\(\#e94e61\) {
+  background: #e94e61;
+}
+.Bg\(\#f66\) {
+  background: #f66;
+}
+.Bgi\(buttomRed\) {
+  background-image: linear-gradient(253deg, #f5515f, #9f041b);
 }
 .Bgc\(\#f2f2f2\) {
   background-color: #f2f2f2;
@@ -40,11 +63,20 @@
 .C\(\#e94e61\) {
   color: #e94e61;
 }
+.C\(\#f66\) {
+  color: #f66;
+}
+.C\(\#fff\) {
+  color: #fff;
+}
 .D\(f\) {
   display: flex;
 }
 .D\(ib\) {
   display: inline-block;
+}
+.D\(tb\) {
+  display: table;
 }
 .Fld\(c\) {
   flex-direction: column;
@@ -85,11 +117,17 @@
 .H\(144px\) {
   height: 144px;
 }
+.H\(16px\) {
+  height: 16px;
+}
 .H\(32px\) {
   height: 32px;
 }
 .H\(44px\) {
   height: 44px;
+}
+.H\(52px\) {
+  height: 52px;
 }
 .H\(72px\) {
   height: 72px;
@@ -136,14 +174,24 @@
 .Mend\(64px\) {
   margin-right: 64px;
 }
+<<<<<<< HEAD
 .Mstart\(16px\) {
   margin-left: 16px;
+=======
+.Mb\(16px\) {
+  margin-bottom: 16px;
+>>>>>>> add basic chart for profolio
 }
 .Mstart\(4px\) {
   margin-left: 4px;
 }
+<<<<<<< HEAD
 .Mstart\(80px\) {
   margin-left: 80px;
+=======
+.Mstart\(a\) {
+  margin-left: auto;
+>>>>>>> add basic chart for profolio
 }
 .T\(50\%\) {
   top: 50%;
@@ -186,6 +234,9 @@
 .TranslateY\(-50\%\) {
   transform: translateY(-50%);
 }
+.W\(10\%\) {
+  width: 10%;
+}
 .W\(100\%\) {
   width: 100%;
 }
@@ -194,6 +245,9 @@
 }
 .W\(144px\) {
   width: 144px;
+}
+.W\(198px\) {
+  width: 198px;
 }
 .W\(252px\) {
   width: 252px;
@@ -207,11 +261,16 @@
 .W\(623px\) {
   width: 623px;
 }
+<<<<<<< HEAD
 .W\(72px\) {
   width: 72px;
 }
 .W\(800px\) {
   width: 800px;
+=======
+.W\(80\%\) {
+  width: 80%;
+>>>>>>> add basic chart for profolio
 }
 .Z\(100\) {
   z-index: 100;
