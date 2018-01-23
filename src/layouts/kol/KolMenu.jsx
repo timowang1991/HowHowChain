@@ -1,16 +1,29 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import classnames from 'classnames';
 
 class KolMenu extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            menuList: ['Portfolio', 'Discovery', 'KOL Listing', 'Setting']
+            menuObj: {
+                portfolio: 'Portfolio',
+                discovery: 'Discovery',
+                kollisting: 'KOL Listing',
+                setting: 'Setting'
+            }
         };
     }
     render() {
         const {
-            menuList
+            menuObj
         } = this.state;
+
+        const {
+            route,
+            routes
+        } = this.props;
+
+        window.props = this.props;
 
         return (
             <div className="Pos(r) Ff(standardFf)">
@@ -23,9 +36,18 @@ class KolMenu extends Component {
                 </div>
                 <div className="H(72px)" />
                 <ul className="Pos(f) W(252px) H(100%) Bxz(bb) Bgc(#f2f2f2) Fz(18px) Pstart(77px) Mt(0) C(#26282a) List(n)">
-                    {menuList.map((item) =>
-                        <li className="Mt(44px) Lh(25px)"><a href='#' className="Td(n) C(#26282a)">{item}</a></li>)
-                    }
+                    {Object.keys(menuObj).map((key, idx) => {
+                        return (
+                            <li className="Mt(44px) Lh(25px)" key={`menu-${key}-${idx}`}>
+                                <a
+                                    href={`${route.path}/${key}`}
+                                    className={classnames('Td(n)', routes[routes.length - 1].path === key ? 'C(#e94e61)' : 'C(#26282a)')}
+                                >
+                                    {menuObj[key]}
+                                </a>
+                            </li>
+                        );
+                    })}
                 </ul>
                 <div className="D(f)">
                     <div className="W(252px)" />    
