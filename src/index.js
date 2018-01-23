@@ -16,6 +16,7 @@ import KolMenu from './layouts/kol/KolMenu'
 import KolList from './layouts/kol/KolList';
 import KolPortfolio from './layouts/kol/KolPortfolio';
 import Payment from './layouts/kol/Payment';
+import KolTransaction from './layouts/kol/KolTransaction';
 
 // Redux Store
 import store from './store'
@@ -43,6 +44,7 @@ ReactDOM.render((
         </Route>
         <Route path="/kol" component={KolMenu}>
           <Route path="portfolio" component={KolPortfolio} />
+          <Route path="transaction" component={KolTransaction} />
           <Route path="kollisting" component={KolList} />
         <Route path="payment" component={Payment} />
         </Route>
