@@ -11,7 +11,6 @@ class KolListItem extends Component {
             totalParticipants,
             participants
         } = this.props;
-
         return (
             <li className="D(f) Jc(sb) Py(20px)">
                 <div className="D(f)">
@@ -31,7 +30,7 @@ class KolListItem extends Component {
                                 <div className="W(32px) H(32px) Fl(start)">
                                     <img
                                         className="W(100%) H(100%) Bdrs(50%)"
-                                        src={image}
+                                        src={item.image}
                                         alt=""
                                     />
                                 </div>

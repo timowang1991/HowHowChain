@@ -1,18 +1,23 @@
 import React, { Component } from 'react';
 import AmCharts from "@amcharts/amcharts3-react";
 import kolList from '../../config/kollisting';
-import kolPortfolioChart from '../../config/kolPortfolioChart';
+import kolTransacChart from '../../config/kolTransacChart';
 
 class KolPortfolio extends Component {
 	constructor(props) {
         super(props);
         this.generateChartData = this.generateChartData.bind(this);
+        this.handleButtonClick = this.handleButtonClick.bind(this);
         this.state = {
 	      chartData: this.generateChartData(),
 	      timer: null
 	    };
     }
 	
+	handleButtonClick() {
+		console.log('-----');
+	}
+
 	generateChartData() {
 	  let firstDate = new Date();
 	  let output = [];
@@ -66,14 +71,16 @@ class KolPortfolio extends Component {
             totalParticipants,
             participants
         } = kolList[0];
-
-        let config = kolPortfolioChart;
+		
+		let [config, tableData] =  kolTransacChart;
         config.dataSets[0].dataProvider = this.state.chartData;
 
+
+
         return (
-        	<div className="profolio">
-        		<ul className="W(1028px) M(a)">
-		            <li className="profolio D(f) Jc(sb) Py(20px)">
+        	<div className="W(1028px)">
+        		<ul className="W(100%) M(a)">
+		            <li className="D(f) Jc(sb) Py(20px)">
 		                <div className="D(f)">
 		                    <div className="W(144px) H(144px) Mend(64px)">
 		                        <img className="W(100%) H(100%) Bdrs(50%)" src={image} alt="" />
@@ -91,7 +98,7 @@ class KolPortfolio extends Component {
 		                                <div className="W(32px) H(32px) Fl(start)">
 		                                    <img
 		                                        className="W(100%) H(100%) Bdrs(50%)"
-		                                        src={image}
+		                                        src={item.image}
 		                                        alt=""
 		                                    />
 		                                </div>
@@ -102,55 +109,59 @@ class KolPortfolio extends Component {
 		                </div>
 		                <div className="Lh(43px) D(f) Jc(c) Fld(c)">
 		                    <div className="Fz(36px) Fw(500) C(#26282a)">
-		                        <button className="W(198px) H(52px) Bdrs(17px) Bgi(buttomRed) Mb(16px) C(#fff) Fw(500) Fz(18px)">買入</button>
-		                        <button className="W(198px) H(52px) Bdrs(17px) Bgc(#fff) Bd(buttomBorder) C(#e94e61) Fw(500) Fz(18px)">賣出</button>
+		                        <button 
+		                        	className="W(198px) H(52px) Bdrs(17px) Bgi(buttomRed) Mb(16px) C(#fff) Fw(500) Fz(18px)"
+		                        	onClick={this.handleButtonClick}>
+		                        	買入
+		                        </button>
+		                        <button 
+		                        	className="W(198px) H(52px) Bdrs(17px) Bgc(#fff) Bd(buttomBorder) C(#e94e61) Fw(500) Fz(18px)"
+		                        	onClick={this.handleButtonClick}>
+		                        	賣出
+		                        </button>
 		                    </div>
 		                </div>
 		           	</li>
 	           	</ul>
 				<hr/>
 				
-				<div className="tableStatus W(1028px) M(a)">
-		          <table className="W(80%) Bdstart(greySolid) Bdt(greySolid) M(a)">
-		          <thead>
-		              <tr>
-		                <td className="r0">売気配値</td>
-		                <td className="r1">売VA数</td>
-		                <td className="r2">価格</td>
-		                <td className="r3">買VA数</td>
-		                <td className="r4">買気配値</td>
-		              </tr>
-		          </thead>
-		          <tbody>
-		            <tr className="sale">
-		              <td className="r0">
-		                <p className="bar W(100%) D(tb) Mstart(a) Bg(#e94e61) H(16px)"></p>
-		              </td>
-		              <td className="r1">10</td>
-		              <th className="r2 C(#e94e61)"><a href="https://valu.is/users/order/buy/kahua?default_price=0.012000">0.012000</a></th>
-		              <td className="r3"></td>
-		              <td className="r4"></td>
-		            </tr>
-		            <tr className="sale">
-		              <td className="r0">
-		                <p className="bar W(10%) D(tb) Mstart(a) Bg(#e94e61) H(16px)"></p>
-		              </td>
-		              <td className="r1">1</td>
-		              <th className="r2 C(#e94e61)"><a href="https://valu.is/users/order/buy/kahua?default_price=0.006000">0.006000</a></th>
-		              <td className="r3"></td>
-		              <td className="r4"></td>
-		            </tr>
-		            <tr className="sale">
-		              <td className="r0">
-		                <p className="bar W(10%) D(tb) Mstart(a) Bg(#e94e61) H(16px)"></p>
-		              </td>
-		              <td className="r1">1</td>
-		              <th className="r2 C(#e94e61)"><a href="https://valu.is/users/order/buy/kahua?default_price=0.001500">0.001500</a></th>
-		              <td className="r3"></td>
-		              <td className="r4"></td>
-		            </tr>
-		          </tbody>
-		          </table>
+				<div className="tableStatus W(80%) H(300px) M(a)">
+		          	<table className="W(40%) Bdstart(greySolid) Bdt(greySolid) M(a) D(ib) Fl(start)">
+			          	<thead>
+			              	<tr className="Lh(2)">
+				                <td className="W(90%)">買量</td>
+				                <td className="r1">買價</td>
+			              	</tr>
+			          	</thead>
+			          	<tbody>
+							{tableData.buy.map((item) => 
+								<tr className="Lh(1.5)">
+					              <td className="r0">
+					                <p className={`bar W(${item.buyAmount}%) D(tb) Mstart(a) Bg(#e94e61) H(16px)`}></p>
+					              </td>
+					              <td className="r1">{item.buyPrice}</td>
+					            </tr>
+							)}
+				        </tbody>
+			        </table>
+					<table className="W(40%) Bdstart(greySolid) Bdt(greySolid) M(a) D(ib) Fl(end)">
+			          	<thead>
+			              	<tr className="Lh(2)">
+				                <td className="r1">賣價</td>
+				                <td className="W(90%)">賣量</td>
+			              	</tr>
+			          	</thead>
+			          	<tbody>
+							{tableData.sold.map((item) => 
+								<tr className="Lh(1.5)">
+					              <td className="r1">{item.soldPrice}</td>
+					              <td className="r0">
+					                <p className={`bar W(${item.soldAmount}%) D(tb) Mend(a) Bg(#468d46) H(16px)`}></p>
+					              </td>
+					            </tr>
+							)}
+				        </tbody>
+			        </table>
 		        </div>
 		        <div className="stock W(80%) M(a)">
 		          <AmCharts.React style={{ width: "100%", height: "450px" }} options={config} />

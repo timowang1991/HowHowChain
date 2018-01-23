@@ -1,4 +1,4 @@
-module.exports = {
+module.exports = [{
     "type": "stock",
     "theme": "light",
     "dataSets": [{
@@ -58,22 +58,34 @@ module.exports = {
         "valueBalloonsEnabled": true,
         "valueLineBalloonEnabled": true,
         "valueLineEnabled": true
-    },
-    "periodSelector": {
-        "position": "top",
-        "periods": [{
-            "period": "DD",
-            "count": 10,
-            "label": "10 days"
-        }, {
-            "period": "MM",
-            "selected": true,
-            "count": 1,
-            "label": "1 month"
-        }, {
-            "period": "YYYY",
-            "count": 1,
-            "label": "1 year"
-        }]
     }
-}
+}, {
+    buy: [{
+            buyAmount: 20,
+            buyPrice: 11.2
+        }, {
+            buyAmount: 30,
+            buyPrice: 11.15
+        }, {
+            buyAmount: 15,
+            buyPrice: 11.10
+        }, {
+            buyAmount: 80,
+            buyPrice: 11.05
+        }
+    ],
+    sold: [{
+            soldAmount: 80,
+            soldPrice: 11.20
+        }, {
+            soldAmount: 15,
+            soldPrice: 11.25
+        }, {
+            soldAmount: 40,
+            soldPrice: 11.30
+        }, {
+            soldAmount: 95,
+            soldPrice: 11.35
+        }
+    ]
+}]

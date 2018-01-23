@@ -1,3 +1,12 @@
+.Bd\(buttomBorder\) {
+  border: solid 3px #e94e61;
+}
+.Bdt\(greySolid\) {
+  border-top: 1px solid #eee;
+}
+.Bdstart\(greySolid\) {
+  border-left: 1px solid #eee;
+}
 .Bdbc\(\#d8d8d8\) {
   border-bottom-color: #d8d8d8;
 }
@@ -7,8 +16,20 @@
 .Bdbw\(1px\) {
   border-bottom-width: 1px;
 }
+.Bdrs\(17px\) {
+  border-radius: 17px;
+}
 .Bdrs\(50\%\) {
   border-radius: 50%;
+}
+.Bg\(\#468d46\) {
+  background: #468d46;
+}
+.Bg\(\#e94e61\) {
+  background: #e94e61;
+}
+.Bgi\(buttomRed\) {
+  background-image: linear-gradient(253deg, #f5515f, #9f041b);
 }
 .Bgc\(\#f2f2f2\) {
   background-color: #f2f2f2;
@@ -40,11 +61,17 @@
 .C\(\#e94e61\) {
   color: #e94e61;
 }
+.C\(\#fff\) {
+  color: #fff;
+}
 .D\(f\) {
   display: flex;
 }
 .D\(ib\) {
   display: inline-block;
+}
+.D\(tb\) {
+  display: table;
 }
 .Fld\(c\) {
   flex-direction: column;
@@ -85,17 +112,32 @@
 .H\(144px\) {
   height: 144px;
 }
+.H\(16px\) {
+  height: 16px;
+}
+.H\(300px\) {
+  height: 300px;
+}
 .H\(32px\) {
   height: 32px;
 }
 .H\(44px\) {
   height: 44px;
 }
+.H\(52px\) {
+  height: 52px;
+}
 .H\(72px\) {
   height: 72px;
 }
 .List\(n\) {
   list-style-type: none;
+}
+.Lh\(1\.5\) {
+  line-height: 1.5;
+}
+.Lh\(2\) {
+  line-height: 2;
 }
 .Lh\(25px\) {
   line-height: 25px;
@@ -127,14 +169,17 @@
 .Mt\(8px\) {
   margin-top: 8px;
 }
-.Mend\(16px\) {
-  margin-right: 16px;
-}
 .Mend\(24px\) {
   margin-right: 24px;
 }
 .Mend\(64px\) {
   margin-right: 64px;
+}
+.Mend\(a\) {
+  margin-right: auto;
+}
+.Mb\(16px\) {
+  margin-bottom: 16px;
 }
 .Mstart\(16px\) {
   margin-left: 16px;
@@ -144,6 +189,9 @@
 }
 .Mstart\(80px\) {
   margin-left: 80px;
+}
+.Mstart\(a\) {
+  margin-left: auto;
 }
 .T\(50\%\) {
   top: 50%;
@@ -195,11 +243,17 @@
 .W\(144px\) {
   width: 144px;
 }
+.W\(198px\) {
+  width: 198px;
+}
 .W\(252px\) {
   width: 252px;
 }
 .W\(32px\) {
   width: 32px;
+}
+.W\(40\%\) {
+  width: 40%;
 }
 .W\(509px\) {
   width: 509px;
@@ -210,8 +264,14 @@
 .W\(72px\) {
   width: 72px;
 }
+.W\(80\%\) {
+  width: 80%;
+}
 .W\(800px\) {
   width: 800px;
+}
+.W\(90\%\) {
+  width: 90%;
 }
 .Z\(100\) {
   z-index: 100;
