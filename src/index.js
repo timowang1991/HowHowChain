@@ -15,11 +15,8 @@ import Profile from './user/layouts/profile/Profile'
 import KolMenu from './layouts/kol/KolMenu'
 import KolList from './layouts/kol/KolList';
 import KolPortfolio from './layouts/kol/KolPortfolio';
-<<<<<<< HEAD
 import Payment from './layouts/kol/Payment';
-=======
 import KolTransaction from './layouts/kol/KolTransaction';
->>>>>>> update
 
 // Redux Store
 import store from './store'
