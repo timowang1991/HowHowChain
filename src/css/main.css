@@ -1,3 +1,12 @@
+.Bdbc\(\#d8d8d8\) {
+  border-bottom-color: #d8d8d8;
+}
+.Bdbs\(s\) {
+  border-bottom-style: solid;
+}
+.Bdbw\(1px\) {
+  border-bottom-width: 1px;
+}
 .Bdrs\(50\%\) {
   border-radius: 50%;
 }
@@ -12,6 +21,9 @@
 }
 .Bxsh\(\$menuBarBoxShadow\) {
   box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.3);
+}
+.Cl\(b\) {
+  clear: both;
 }
 .Cl\(start\) {
   clear: left;
@@ -43,6 +55,9 @@
 .Jc\(sb\) {
   justify-content: space-between;
 }
+.Fl\(end\) {
+  float: right;
+}
 .Fl\(start\) {
   float: left;
 }
@@ -54,6 +69,9 @@
 }
 .Fz\(18px\) {
   font-size: 18px;
+}
+.Fz\(20px\) {
+  font-size: 20px;
 }
 .Fz\(24px\) {
   font-size: 24px;
@@ -85,6 +103,9 @@
 .Lh\(43px\) {
   line-height: 43px;
 }
+.Lh\(72px\) {
+  line-height: 72px;
+}
 .M\(a\) {
   margin: auto;
 }
@@ -94,17 +115,35 @@
 .Mt\(13px\) {
   margin-top: 13px;
 }
+.Mt\(16px\) {
+  margin-top: 16px;
+}
+.Mt\(40px\) {
+  margin-top: 40px;
+}
 .Mt\(44px\) {
   margin-top: 44px;
 }
 .Mt\(8px\) {
   margin-top: 8px;
 }
+.Mend\(16px\) {
+  margin-right: 16px;
+}
+.Mend\(24px\) {
+  margin-right: 24px;
+}
 .Mend\(64px\) {
   margin-right: 64px;
 }
+.Mstart\(16px\) {
+  margin-left: 16px;
+}
 .Mstart\(4px\) {
   margin-left: 4px;
+}
+.Mstart\(80px\) {
+  margin-left: 80px;
 }
 .T\(50\%\) {
   top: 50%;
@@ -119,6 +158,10 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.Py\(24px\) {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .Pstart\(77px\) {
   padding-left: 77px;
 }
@@ -130,6 +173,9 @@
 }
 .Pos\(r\) {
   position: relative;
+}
+.Ta\(end\) {
+  text-align: right;
 }
 .Td\(n\) {
   text-decoration: none;
@@ -160,6 +206,12 @@
 }
 .W\(623px\) {
   width: 623px;
+}
+.W\(72px\) {
+  width: 72px;
+}
+.W\(800px\) {
+  width: 800px;
 }
 .Z\(100\) {
   z-index: 100;
