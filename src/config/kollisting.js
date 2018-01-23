@@ -4,9 +4,9 @@ module.exports = [
         name: 'HowFun',
         description: '嗨大家安安! 我是HowHow 我喜歡拍影片記錄自己的生活',
         image: 'https://imgur.com/a/tkBhi',
-        totalMovies: 360,
-        ethValue: 23.34,
-        totalParticipants: 234766,
+        totalMovies: Math.floor(Math.random() * 1000),
+        ethValue: Math.round(Math.random() * 10000) / 100,
+        totalParticipants: Math.floor(Math.random() * 500000),
         participants: [
             {
                 image: 'https://randomuser.me/api/portraits/men/64.jpg'
@@ -30,9 +30,9 @@ module.exports = [
         name: '囧星人',
         description: '安安，我是囧星人。 我喜歡電影和書，寫了12年影評，從2013年開始在Youtube發表口說評論。',
         image: 'https://imgur.com/a/P8GQk',
-        totalMovies: 360,
-        ethValue: 23.34,
-        totalParticipants: 234766,
+        totalMovies: Math.floor(Math.random() * 1000),
+        ethValue: Math.round(Math.random() * 10000) / 100,
+        totalParticipants: Math.floor(Math.random() * 500000),
         participants: [
             {
                 image: 'https://randomuser.me/api/portraits/men/64.jpg'
@@ -56,9 +56,9 @@ module.exports = [
         name: '上班不要看nsfw',
         description: '那是一個特別寒冷的冬天，呱吉和小火車在下雪的台北成立了一個只有兩人的工作室。',
         image: 'https://imgur.com/a/rbaMW',
-        totalMovies: 360,
-        ethValue: 23.34,
-        totalParticipants: 234766,
+        totalMovies: Math.floor(Math.random() * 1000),
+        ethValue: Math.round(Math.random() * 10000) / 100,
+        totalParticipants: Math.floor(Math.random() * 500000),
         participants: [
             {
                 image: 'https://randomuser.me/api/portraits/men/64.jpg'
@@ -82,9 +82,9 @@ module.exports = [
         name: 'TGOP 這群人',
         description: '『這群人』TGOP（This Group Of People）由【雙胞胎】展榮、展瑞、茵聲，加上木星、董仔、尼克、石頭，共七人組成。 ',
         image: 'https://imgur.com/a/O8e8Z',
-        totalMovies: 360,
-        ethValue: 23.34,
-        totalParticipants: 234766,
+        totalMovies: Math.floor(Math.random() * 1000),
+        ethValue: Math.round(Math.random() * 10000) / 100,
+        totalParticipants: Math.floor(Math.random() * 500000),
         participants: [
             {
                 image: 'https://randomuser.me/api/portraits/men/64.jpg'
@@ -108,9 +108,9 @@ module.exports = [
         name: '黃阿瑪的後宮生活',
         description: '我們都住在臺灣臺北，後宮以黃阿瑪(貓)為首，帶領其他六位後宮成員(招弟、三腳、Socles、嚕嚕、柚子、浣腸) 與兩位奴才-志銘與狸貓(人)，以照片和影片分享萬睡皇朝的私密趣事。',
         image: 'https://imgur.com/a/wiI64',
-        totalMovies: 360,
-        ethValue: 23.34,
-        totalParticipants: 234766,
+        totalMovies: Math.floor(Math.random() * 1000),
+        ethValue: Math.round(Math.random() * 10000) / 100,
+        totalParticipants: Math.floor(Math.random() * 500000),
         participants: [
             {
                 image: 'https://randomuser.me/api/portraits/men/64.jpg'
