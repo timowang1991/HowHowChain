@@ -14,23 +14,23 @@ module.exports = {
         {
             name: '上班不要看NSFW',
             image: 'https://imgur.com/a/rbaMW',
-            kolCurrencyValue: 20,
+            kolCurrencyValue: Math.floor(Math.random() * 1000),
             kolCurrencyName: 'NSFWC',
-            kolCurrencyToETH: 1.62
+            kolCurrencyToETH: Math.round(Math.random() * 10000) / 100
         },
         {
             name: '囧星人',
             image: 'https://imgur.com/a/P8GQk',
-            kolCurrencyValue: 120,
+            kolCurrencyValue: Math.floor(Math.random() * 1000),
             kolCurrencyName: '9C',
-            kolCurrencyToETH: 200.37
+            kolCurrencyToETH: Math.round(Math.random() * 10000) / 100
         },
         {
             name: '黃阿瑪的後宮生活',
             image: 'https://imgur.com/a/wiI64',
-            kolCurrencyValue: 87,
+            kolCurrencyValue: Math.floor(Math.random() * 1000),
             kolCurrencyName: 'SCC',
-            kolCurrencyToETH: 1.67
+            kolCurrencyToETH: Math.round(Math.random() * 10000) / 100
         }
     ]
 }
