@@ -6,7 +6,7 @@ class KolList extends Component {
     render() {
         return (
             <div className="W(100%)">
-                <ul className="W(1028px) M(a)">
+                <ul className="M(20px)">
                     {kolList.map((item, idx) =>
                         <KolListItem key={`kolList-${idx}`} {...item} />
                     )}    

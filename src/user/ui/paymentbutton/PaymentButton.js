@@ -2,8 +2,7 @@ import React from 'react'
 
 const PaymentButton = ({ onPaymentClick }) => {
   return(
-    
-      <button onClick={(event) => onPaymentClick(event)}>Pay with Ether </button>
+    <button className="pure-button pure-button-primary" onClick={(event) => onPaymentClick(event)}>Pay with Ether</button>
   )
 }
 

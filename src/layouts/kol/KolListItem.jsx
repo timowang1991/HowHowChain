@@ -12,7 +12,7 @@ class KolListItem extends Component {
             participants
         } = this.props;
         return (
-            <li className="D(f) Jc(sb) Py(20px)">
+            <a href='/kol/howhow' className="D(f) Jc(sb) Py(20px) Td(n)">
                 <div className="D(f)">
                     <div className="W(144px) H(144px) Mend(64px)">
                         <img className="W(100%) H(100%) Bdrs(50%)" src={image} alt="" />
@@ -45,7 +45,7 @@ class KolListItem extends Component {
                         <div className="D(ib) Mstart(4px) Fz(24px) C(#cacaca)">ETH</div>
                     </div>
                 </div>
-            </li>
+            </a>
         );
     }
 }
