@@ -1,8 +1,17 @@
 import React, { Component } from 'react';
-
+import { connect } from 'react-redux'
+import { getBalance } from '../../user/ui/profolioList/ProfolioListActions'
 
 class HowHowFeed extends Component {
+
+    componentDidMount() {
+        setTimeout(() => {
+            this.props.checkBalance()
+        }, 500);
+    }
+
     render() {
+
         return (
             <div className="W(100%)">
                 <div className="P(20px)">
@@ -25,4 +34,24 @@ class HowHowFeed extends Component {
     }
 }
 
-export default HowHowFeed;
+const mapStateToProps = (state, ownProps) => {
+    return {
+        amount: (state.user.data ? state.user.data.amount : 0)
+    }
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        checkBalance: () => {
+            // event.preventDefault();
+            dispatch(getBalance())
+        }
+    }
+}
+
+const HowHowFeedContainer = connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(HowHowFeed)
+
+export default HowHowFeedContainer;
