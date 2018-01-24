@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import AmCharts from "@amcharts/amcharts3-react";
 import kolList from '../../config/kollisting';
 import kolTransacChart from '../../config/kolTransacChart';
+import PaymentButtonContainer from '../../user/ui/paymentbutton/PaymentButtonContainer';
+import ProfolioListContainer from '../../user/ui/profolioList/ProfolioListContainer';
 
 class KolPortfolio extends Component {
 	constructor(props) {
@@ -15,7 +17,7 @@ class KolPortfolio extends Component {
     }
 	
 	handleButtonClick() {
-		console.log('-----');
+		window.location = '/kol/payment';
 	}
 
 	generateChartData() {
@@ -109,17 +111,15 @@ class KolPortfolio extends Component {
 		                </div>
 		                <div className="Lh(43px) D(f) Jc(c) Fld(c)">
 		                    <div className="Fz(36px) Fw(500) C(#26282a)">
-		                        <button 
-		                        	className="W(198px) H(52px) Bdrs(17px) Bgi(buttomRed) Mb(16px) C(#fff) Fw(500) Fz(18px)"
-		                        	onClick={this.handleButtonClick}>
-		                        	買入
-		                        </button>
+														<PaymentButtonContainer/>
 		                        <button 
 		                        	className="W(198px) H(52px) Bdrs(17px) Bgc(#fff) Bd(buttomBorder) C(#e94e61) Fw(500) Fz(18px)"
 		                        	onClick={this.handleButtonClick}>
 		                        	賣出
 		                        </button>
 		                    </div>
+												<div className="D(ib) Ta(c)">現在您有 <ProfolioListContainer /> HHC.</div>
+												
 		                </div>
 		           	</li>
 	           	</ul>
