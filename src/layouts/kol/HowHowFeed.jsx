@@ -30,7 +30,7 @@ class HowHowFeed extends Component {
                         </div>
                     </div>
                 </div>
-                
+
                 <div className="Sponsers W(60%) M(a) Mt(16px) Mb(32px)">
                     <div>贊助者(3,446)</div>
                     <div className="D(f) My(20px)" >
@@ -40,6 +40,10 @@ class HowHowFeed extends Component {
                         <img className="H(64px) W(64px) Bdrs(24px) Mend(10px)" src="https://randomuser.me/api/portraits/men/37.jpg" alt=""/>
                         <img className="H(64px) W(64px) Bdrs(24px) Mend(10px)" src="https://randomuser.me/api/portraits/men/22.jpg" alt=""/>
                         <img className="H(64px) W(64px) Bdrs(24px) Mend(10px)" src="https://randomuser.me/api/portraits/men/33.jpg" alt=""/>
+                        <img className="H(64px) W(64px) Bdrs(24px) Mend(10px)" src="https://randomuser.me/api/portraits/men/55.jpg" alt=""/>
+                        <img className="H(64px) W(64px) Bdrs(24px) Mend(10px)" src="https://randomuser.me/api/portraits/men/66.jpg" alt=""/>
+                        <img className="H(64px) W(64px) Bdrs(24px) Mend(10px)" src="https://randomuser.me/api/portraits/men/77.jpg" alt=""/>
+                        <img className="H(64px) W(64px) Bdrs(24px) Mend(10px)" src="https://randomuser.me/api/portraits/men/88.jpg" alt=""/>
                         <div className="H(64px) W(64px) Bgc(#bb1e32) Ta(c) Bdrs(24px) C(white)"><text className="Lh(64px)">More</text></div>
                     </div>
                 </div>

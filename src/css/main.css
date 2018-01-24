@@ -115,6 +115,9 @@
 .Fz\(24px\) {
   font-size: 24px;
 }
+.Fz\(30px\) {
+  font-size: 30px;
+}
 .Fz\(32px\) {
   font-size: 32px;
 }
@@ -243,6 +246,9 @@
 .Py\(24px\) {
   padding-top: 24px;
   padding-bottom: 24px;
+}
+.Pt\(50px\) {
+  padding-top: 50px;
 }
 .Pstart\(77px\) {
   padding-left: 77px;
