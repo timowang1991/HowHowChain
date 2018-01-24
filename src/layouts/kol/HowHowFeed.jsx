@@ -14,7 +14,7 @@ class HowHowFeed extends Component {
 
         return (
             <div className="W(100%)">
-                <div className="P(20px)">
+                <div>
                     <div className="Ta(c) C(white) Pt(50px)" style={{
                         background: 'url(https://cdn.pixabay.com/photo/2018/01/16/23/37/sunset-3087145_1280.jpg) no-repeat',
                         backgroundSize: "100%"
