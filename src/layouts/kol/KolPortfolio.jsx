@@ -2,8 +2,16 @@ import React, { Component } from 'react';
 import KolPortfolioListItem from './KolPortfolioListItem';
 import kolPortfolio from '../../config/kolPortfolio';
 import ProfolioListContainer from '../../user/ui/profolioList/ProfolioListContainer';
+import { connect } from 'react-redux'
+import { getBalance } from '../../user/ui/profolioList/ProfolioListActions'
 
 class KolPortfolio extends Component {
+    componentDidMount() {
+        setTimeout(() => {
+            this.props.checkBalance()
+        }, 500);
+    }
+
     render() {
 
         var data = {
@@ -11,7 +19,7 @@ class KolPortfolio extends Component {
             image: 'https://s3-us-west-1.amazonaws.com/acttools/howhowcoin/20180123/howhow.jpg?q=57786',
             kolCurrencyValue: 100,
             kolCurrencyName: 'HFC',
-            kolCurrencyToETH: 2.34
+            kolCurrencyToETH: this.props.amount * 0.01
         };
 
         return (
@@ -50,4 +58,24 @@ class KolPortfolio extends Component {
     }
 }
 
-export default KolPortfolio; 
+const mapStateToProps = (state, ownProps) => {
+    return {
+        amount: (state.user.data ? state.user.data.amount : 0)
+    }
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        checkBalance: () => {
+            // event.preventDefault();
+            dispatch(getBalance())
+        }
+    }
+}
+
+const KolPortfolioContainer = connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(KolPortfolio)
+
+export default KolPortfolioContainer; 
