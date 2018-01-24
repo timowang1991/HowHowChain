@@ -19,7 +19,7 @@ class ProfolioList extends Component {
 
   render() {
     return (
-      <div>{this.props.amount}</div>
+      <span>{this.props.amount}</span>
     )
   }
 
